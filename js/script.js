@@ -330,7 +330,7 @@ function loadWebsites() {
                 var site = data.websites[i];
                 var newRow = $('<tr>').addClass('actInfo').click(websiteTableRowClicked);
                 newRow.data('websiteID', site.websiteID);
-                newRow.data('websiteIsPremium', site.websiteIsPremium);
+                newRow.data('websiteIsPremium', site.websiteIsPremium || site.websiteIsPremiumPlus || site.websiteIsPremiumPro);
                 $('<td>').addClass('websiteID').html(site.websiteID).appendTo(newRow);
                 $('<td>').addClass('websiteCreated').html(site.websiteCreated).appendTo(newRow);
                 $('<td>').addClass('websiteBrandname').html(site.websiteBrandname).appendTo(newRow);

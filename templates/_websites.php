@@ -1,7 +1,7 @@
 <h1>Websites</h1>
 
 <input id="websites-filter-searchBox" placeholder="Type search string...">
-<label id="premiumOnly" style="margin-left"><input type="checkbox" id="websites-filter-premium">Show only Premium (paid)</label>
+<label id="premiumOnly" style="margin-left"><input type="checkbox" id="websites-filter-premium">Show only paid</label>
 <a class="button createWebsite" href="" style="float: right" target="_blank">Create new website</a>
 
 <div class="loader" id="websites-loader"><img src="img/loader.gif" width="77" height="7" alt=""></div>
