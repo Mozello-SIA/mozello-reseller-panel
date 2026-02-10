@@ -66,7 +66,7 @@
 <div class="halfsize">
 
    <label>Support website</label><br>
-   <input class="w100p" id="settings-supportWebsite" type="text" value=""><br>
+   <input class="w100p validate-url" id="settings-supportWebsite" type="text" value=""><br>
 
 </div>
 
@@ -86,28 +86,37 @@
    </div>
 
    <label>Website</label><br>
-   <input class="w100p" id="settings-website" type="text" value=""><br>
+   <input class="w100p validate-url" id="settings-website" type="text" value=""><br>
 
    <label>URL of your logo file (PNG or SVG)</label><br>
-   <input class="w100p" id="settings-logoLink" type="text" value=""><br>
+   <input class="w100p validate-url" id="settings-logoLink" type="text" value=""><br>
 
-   <label>Order URL</label> - <a href="/developers-reseller-api/#url-order" target="_blank">more info</a><br>
-   <input class="w100p" id="settings-buyLink" type="text" value=""><br>
+   <label>URL of your favicon file (ICO or PNG)</label><br>
+   <input class="w100p validate-url" id="settings-faviconLink" type="text" value=""><br>
+
+   <label>Order URL</label> - <a href="/developers/reseller-integration/#url-order" target="_blank">more info</a><br>
+   <input class="w100p validate-url" id="settings-buyLink" type="text" value=""><br>
 
 </div>
 
 <div class="halfsize">
 
    <div class="white-label">
-   <label>Custom domain for pages</label> - <a href="http://www.mozello.com/contact/" target="_blank">contact to change</a><br>
-   <input class="w100p" id="settings-domain" type="text" value="" disabled="disabled"><br>
+   <label>Custom domain for pages</label> - <a class="paidLink" href="http://www.mozello.com/developers/domain-setup/#custom-domain-setup" target="_blank">change</a><br>
+   <input class="w100p" id="settings-domain" type="text" value="" disabled="disabled" placeholder="e.g. yourdomain.com"><br>
    </div>
 
    <label>Supported domain extensions</label><br>
    <input class="w100p" id="settings-tlds" type="text" value=""><br>
 
-   <label>API notify URL</label> - <a href="/developers-reseller-api/#url-notification" target="_blank">more info</a><br>
-   <input class="w100p" id="settings-notifyLink" type="text" value=""><br>
+   <label>API notify URL</label> - <a href="/developers/reseller-integration/#url-notification" target="_blank">more info</a><br>
+   <input class="w100p validate-url" id="settings-notifyLink" type="text" value=""><br>
+
+   <label>Terms of Service URL</label><br>
+   <input class="w100p validate-url" id="settings-termsLink" type="text" value=""><br>
+
+   <label>Privacy Policy URL</label><br>
+   <input class="w100p validate-url" id="settings-privacyLink" type="text" value=""><br>
 
 </div>
 

@@ -15,7 +15,7 @@
 <input class="w100p" name="password" type="password" tabindex="2"><br>
 
 <input class="button" name="" type="submit" value="Login">
-<a href="http://www.mozello.com/contact/" style="margin-left: 15px;" target="_blank">Need help?</a>
+<a href="https://www.mozello.com/contact/" style="margin-left: 15px;" target="_blank">Need help?</a>
 
 <div class="loader" id="login-loader" style="width: 200px;"><img src="img/loader.gif" width="77" height="7" alt=""></div>
 

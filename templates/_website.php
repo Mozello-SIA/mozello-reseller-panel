@@ -22,15 +22,25 @@
    <tr>
       <td>Domains</td>
       <td class="domainlist" id="website-inspector-domainlist">
-      <div id="add-domain-add-btn-panel"><a class="action" id="add-domain-add-btn" href="#">Assign New</a></div>
+      <div id="add-domain-add-btn-panel">
+      <a class="action" id="add-domain-add-btn" href="#">Add Domain</a>
+      <a class="action" id="add-domain-add-btn" href="http://www.mozello.com/developers/domain-setup/" target="_blank">DNS setup</a>
+      </div>
       <div id="add-domain-add-name-panel" style="display: none"><input type="text" id="add-domain-name" />&nbsp;<a class="action" href="#" id="add-domain-name-ok">Add</a>&nbsp;<a class="action" href="#" id="add-domain-name-cancel">Cancel</a></div>
       <div class="loader" id="website-domains-loader"><img src="img/loader.gif" width="77" height="7" alt=""></div>
       </td>
    </tr>
    <tr>
-      <td>Premium</td>
-      <td><span id="website-inspector-premium-enabled">Enabled</span>
-      &nbsp;&nbsp;<a class="action red" href="#" id="website-inspector-premium-enable-btn">Disable</a></td>
+      <td>Premium (paid mode)</td>
+      <td>
+          <span id="website-inspector-premium-enabled"></span>
+          &nbsp;&nbsp;
+          <a class="action red" href="#" id="website-inspector-premium-enable-btn"></a>
+          <a class="action red" href="#" id="website-inspector-premiumplus-enable-btn"></a>
+          <!--
+          <a class="action red" href="#" id="website-inspector-premiumpro-enable-btn"></a>
+          -->
+      </td>
    </tr>
    <tr>
       <td>Created</td>
