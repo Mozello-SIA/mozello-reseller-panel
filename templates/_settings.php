@@ -118,6 +118,9 @@
    <label>Privacy Policy URL</label><br>
    <input class="w100p validate-url" id="settings-privacyLink" type="text" value=""><br>
 
+   <label>Monthly AI credits for new websites (0 = AI off)</label><br>
+   <input class="w100p" id="settings-aiDefaultLimit" type="text" value=""><br>
+
 </div>
 
 </div>

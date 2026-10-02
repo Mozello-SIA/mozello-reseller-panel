@@ -11,7 +11,8 @@ var RA = ResApi({
     },
     onApiResponseError: function (response) {
         if (response.errorCode != 401) {
-            showMessage('Server error: ' + response.errorMsg, 'error');
+            showMessage('Server error: ' + response.errorMsg
+                + (typeof response.maxCredits !== 'undefined' ? ' (max ' + response.maxCredits + ')' : ''), 'error');
             $('.loader').hide();
         }
     }
@@ -175,6 +176,26 @@ function fillInWebsiteInspector(website) {
             return false;
         });
     }
+    $('#website-inspector-ai-limit').val(website.aiMonthlyLimit);
+    $('#website-inspector-ai-spent').html(website.aiSpentThisMonth);
+    $('#website-inspector-ai-extra').html(website.aiExtraCredits > 0
+        ? website.aiExtraCredits + ' (valid until ' + website.aiExtraCreditsValidUntil + ')'
+        : '0');
+    $('#website-inspector-ai-extra-add').val('');
+    $('#website-inspector-ai-limit-btn').off('click').on('click', function () {
+        RA.setAiLimit(websiteID, $.trim($('#website-inspector-ai-limit').val()), function () {
+            showMessage('Monthly AI credits saved.', 'success');
+            reloadWebsiteInspector(websiteID);
+        });
+        return false;
+    });
+    $('#website-inspector-ai-extra-btn').off('click').on('click', function () {
+        RA.addAiCredits(websiteID, $.trim($('#website-inspector-ai-extra-add').val()), function () {
+            showMessage('Extra AI credits added.', 'success');
+            reloadWebsiteInspector(websiteID);
+        });
+        return false;
+    });
     $('#website-inspector-created').html(website.websiteCreated);
     $('#website-inspector-modified').html(website.websiteModified);
     $('#website-inspector-accessed').html(website.websiteAccessed);

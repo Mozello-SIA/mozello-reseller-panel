@@ -37,9 +37,26 @@
           &nbsp;&nbsp;
           <a class="action red" href="#" id="website-inspector-premium-enable-btn"></a>
           <a class="action red" href="#" id="website-inspector-premiumplus-enable-btn"></a>
-          <!--
           <a class="action red" href="#" id="website-inspector-premiumpro-enable-btn"></a>
-          -->
+      </td>
+   </tr>
+   <tr>
+      <td>Monthly AI credits</td>
+      <td>
+          <input type="text" id="website-inspector-ai-limit" size="10" />&nbsp;<a class="action" href="#" id="website-inspector-ai-limit-btn">Save</a>
+          <br><small>0 and no extra credits = AI features are hidden for this website.</small>
+      </td>
+   </tr>
+   <tr>
+      <td>AI credits used this month</td>
+      <td id="website-inspector-ai-spent"></td>
+   </tr>
+   <tr>
+      <td>Extra AI credits</td>
+      <td>
+          <span id="website-inspector-ai-extra"></span>
+          &nbsp;&nbsp;<input type="text" id="website-inspector-ai-extra-add" size="10" />&nbsp;<a class="action" href="#" id="website-inspector-ai-extra-btn">Add</a>
+          <br><small>Used after the monthly credits run out, only while the website is Premium. Valid for 300 days from the last addition. Available once reseller AI pricing comes into effect.</small>
       </td>
    </tr>
    <tr>

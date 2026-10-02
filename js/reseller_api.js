@@ -167,6 +167,18 @@ var ResApi = function (properties) {
             this.apiCall('api/website/' + id + '/domain/' + domain_id + '/remove/', GetDefaultApiCallParams(), callback);
         },
 
+        setAiLimit: function (id, credits, callback) {
+            var data = GetDefaultApiCallParams();
+            data.credits = credits;
+            this.apiCall('api/website/' + id + '/ai_limit/set/', data, callback);
+        },
+
+        addAiCredits: function (id, credits, callback) {
+            var data = GetDefaultApiCallParams();
+            data.credits = credits;
+            this.apiCall('api/website/' + id + '/ai_credits/add/', data, callback);
+        },
+
         getSettings: function (callback) {
             this.apiCall('api/settings/', GetDefaultApiCallParams(), callback);
         },
